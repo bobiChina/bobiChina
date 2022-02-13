@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: sshd-test
+server:
+  port: 8808
+poolconfig:
+  corePoolSize: 10
+  maxPoolSize: 10
+  queueCapacity: 100
+  keepAliveSeconds: 60
