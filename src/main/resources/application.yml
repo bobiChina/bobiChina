@@ -5,6 +5,6 @@ server:
   port: 8808
 poolconfig:
   corePoolSize: 10
-  maxPoolSize: 10
-  queueCapacity: 100
+  maxPoolSize: 30
+  queueCapacity: 10
   keepAliveSeconds: 60

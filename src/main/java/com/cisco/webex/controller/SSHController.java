@@ -1,6 +1,7 @@
 package com.cisco.webex.controller;
 
 import com.cisco.webex.service.SSHService;
+import com.cisco.webex.sftpTest.FtpInterface;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -27,8 +28,13 @@ public class SSHController {
         return "is ok ....";
     }
 
-    @GetMapping("threadPool")
+    @GetMapping("/threadPool")
     public void testThreadPool(){
         sshService.testThreadPool();
+    }
+
+    @GetMapping("/sftpFileSystem")
+    public void testSftpFileSystem(){
+        sshService.testSftpFileSystem();
     }
 }
